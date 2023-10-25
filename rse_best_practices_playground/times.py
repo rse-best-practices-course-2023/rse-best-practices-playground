@@ -6,12 +6,13 @@ import datetime
 # ===============================================================
 my_level = "beginner"  # beginner or pro
 
-
 # ===============================================================
 # Beginner level
 # All students should try first to solve the problem at this level.
 # ===============================================================
+
 def calculate_fastest_time(time_list):
+    """this function loops through a list of times, returning the fastest time"""
     fastest_time = time_list[0]
     for time in time_list:
         if time > fastest_time:
