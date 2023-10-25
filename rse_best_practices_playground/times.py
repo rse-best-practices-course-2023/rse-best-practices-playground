@@ -24,6 +24,10 @@ def calculate_fastest_time(time_list):
 
 
 def print_fastest_time(time_list):
+    """
+    Returns the greatest value in a list of times as a fastest time. 
+    Prints it to screen
+    """
     fastest_time = time_list[0]
     for time in time_list:
         if time > fastest_time:
