@@ -11,7 +11,10 @@ my_level = "beginner"  # beginner or pro
 # Beginner level
 # All students should try first to solve the problem at this level.
 # ===============================================================
+
 def calculate_fastest_time(time_list):
+    '''The function loops over times in a time_list, and compares each time to the previous time.
+     If the time is faster than the previous, it becomes the fastest time '''
     fastest_time = time_list[0]
     for time in time_list:
         if time > fastest_time:
