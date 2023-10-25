@@ -26,11 +26,7 @@ def calculate_fastest_time(time_list):
 
 
 def print_fastest_time(time_list):
-    fastest_time = time_list[0]
-    for time in time_list:
-        if time < fastest_time:
-            fastest_time = time
-
+    fastest_time = calculate_fastest_time(time_list)
     print(f"This is the fastest time: {fastest_time} 🚀")
 
 
