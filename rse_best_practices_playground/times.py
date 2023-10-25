@@ -15,17 +15,14 @@ def calculate_fastest_time(time_list):
     """Calculate and return the fastest time given a list of times."""
     fastest_time = time_list[0]
     for time in time_list:
-        if time > fastest_time:
+        if time < fastest_time:
             fastest_time = time
     return fastest_time
 
 
 def print_fastest_time(time_list):
-    fastest_time = time_list[0]
-    for time in time_list:
-        if time > fastest_time:
-            fastest_time = time
-
+    """Print the fastest time in a given list"""
+    fastest_time = calculate_fastest_time(time_list)
     print(f"This is the fastest time: {fastest_time} 🚀")
 
 
