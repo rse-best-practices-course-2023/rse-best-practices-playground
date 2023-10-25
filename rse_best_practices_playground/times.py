@@ -15,6 +15,8 @@ def calculate_fastest_time(time_list):
     """this function loops through a list of times, returning the fastest time"""
     fastest_time = time_list[0]
     for time in time_list:
+        if time < 0:
+            raise ValueError
         if time > fastest_time:
             fastest_time = time
     return fastest_time
