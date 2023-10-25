@@ -1,4 +1,4 @@
-from times import calculate_fastest_time
+from rse_best_practices_playground.times import calculate_fastest_time
 
 
 def test_fastest_time_in_a_specific_case():
