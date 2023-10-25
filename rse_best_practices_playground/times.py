@@ -1,3 +1,8 @@
+# calculate_fastest_time takes the first element of a list
+# and compares to others. If the new time is greater, this will
+# be stored as the fastest time.
+
+
 import datetime
 
 # ===============================================================
