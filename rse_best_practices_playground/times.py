@@ -24,11 +24,7 @@ def calculate_fastest_time(time_list):
 
 
 def print_fastest_time(time_list):
-    fastest_time = time_list[0]
-    for time in time_list:
-        if time > fastest_time:
-            fastest_time = time
-
+    fastest_time = calculate_fastest_time(time_list)
     print(f"This is the fastest time: {fastest_time} 🚀")
 
 
@@ -112,7 +108,7 @@ def time_range_less_precise(
 if __name__ == "__main__":
     if my_level == "beginner":
         time_list = [1, 2, 3, 4]
-        print(calculate_fastest_time(time_list))
+        print_fastest_time(time_list)
     elif my_level == "pro":
         large = time_range("2010-01-12 10:00:00", "2010-01-12 12:00:00")
         short = time_range("2010-01-12 10:30:00", "2010-01-12 10:45:00", 2, 60)
