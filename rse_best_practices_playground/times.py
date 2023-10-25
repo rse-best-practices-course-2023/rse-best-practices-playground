@@ -11,6 +11,10 @@ my_level = "beginner"  # beginner or pro
 # Beginner level
 # All students should try first to solve the problem at this level.
 # ===============================================================
+"""
+It sort through all the values in the list of time.
+The function then provides the biggest time in a list of times 
+"""
 def calculate_fastest_time(time_list):
     fastest_time = time_list[0]
     for time in time_list:
