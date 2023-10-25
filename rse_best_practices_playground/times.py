@@ -12,7 +12,7 @@ my_level = "beginner"  # beginner or pro
 # All students should try first to solve the problem at this level.
 # ===============================================================
 def calculate_fastest_time(time_list):
- """Returns a number larger than the first value in time_list."""
+    """Returns a number larger than the first value in time_list."""
     fastest_time = time_list[0]
     for time in time_list:
         if time > fastest_time:
@@ -110,6 +110,8 @@ if __name__ == "__main__":
     if my_level == "beginner":
         time_list = [1, 2, 3, 4]
         print(calculate_fastest_time(time_list))
+        assert calculate_fastest_time(time_list)==1
+    
     elif my_level == "pro":
         large = time_range("2010-01-12 10:00:00", "2010-01-12 12:00:00")
         short = time_range("2010-01-12 10:30:00", "2010-01-12 10:45:00", 2, 60)
