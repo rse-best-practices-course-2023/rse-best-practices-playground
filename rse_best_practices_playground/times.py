@@ -1,4 +1,5 @@
 import datetime
+import numpy as np
 
 # ===============================================================
 # Instructions
@@ -13,9 +14,15 @@ my_level = "beginner"  # beginner or pro
 # ===============================================================
 def calculate_fastest_time(time_list):
     """Returns the largest ("fastest") time from a list of times."""
+    if len(time_list) == 0:
+        return "The list of times is empty."
+    
+    if np.any(np.asarray(time_list) < 0):
+        return "At least one of the times is negative."
+        
     fastest_time = time_list[0]
     for time in time_list:
-        if time > fastest_time:
+        if time < fastest_time:
             fastest_time = time
     return fastest_time
 
