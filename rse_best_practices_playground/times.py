@@ -11,23 +11,18 @@ my_level = "beginner"  # beginner or pro
 # Beginner level
 # All students should try first to solve the problem at this level.
 # ===============================================================
+
 def calculate_fastest_time(time_list):
+    """
+    The function prints what's the fastest time by comparing the time that is assigned as the fastest from a list of different times, and comparing it with the other times. In other words, we set which is the fastest time and then the fucntion compares the assigned number with differnt ones.
+    """
     fastest_time = time_list[0]
     for time in time_list:
-        if time > fastest_time:
+        if time < 0:
+            raise ValueError
+        if time < fastest_time:
             fastest_time = time
     return fastest_time
-
-
-def print_fastest_time(time_list):
-    fastest_time = time_list[0]
-    for time in time_list:
-        if time > fastest_time:
-            fastest_time = time
-
-    print(f"This is the fastest time: {fastest_time} 🚀")
-
-
 # ===============================================================
 # Pro level
 # Only for students who have solved the problem at the beginner level
