@@ -1,3 +1,6 @@
+# calculate_fastest_time: takes the first element of the 
+#list and compares itt with others. If the new...
+
 import datetime
 
 # ===============================================================
